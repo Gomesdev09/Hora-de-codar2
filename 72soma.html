@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+var valores = [];
+
+for (let N = 1; N < 7; N++) {
+    var valor = parseFloat(prompt(`Digite ${N} seu valor`));
+    valores.push(valor);
+}
+var filtrados = [];
+filtrados = valores.filter(valor => 72 && valor > 0); // filter adiciona um filtro de valores não sei pq && funciona mas é necessario
+
+
+var soma = filtrados.reduce((a, b) => a + b); // reduce foi o meio ultilizado para somar os codigos de forma a+b sempre funciona
+
+
+alert("A soma é " + soma);
+
+</script>
+<li> <a href="index.html"> Menu principal</a></li>

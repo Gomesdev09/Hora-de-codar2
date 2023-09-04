@@ -1,0 +1,23 @@
+    <!DOCTYPE html>
+    <script>
+
+    var numeros = []; 
+
+    for (var n = 0; n < 3; n++) { 
+    var numero = parseFloat(prompt(`digite o valor ${n + 1}:`)); 
+    numeros.push(numero) ;
+
+    }
+    numeros.sort((a, b) => b - a); //.sort cria uma funçao de comparção personalisada
+    
+    
+    var maior1 = numeros[0];
+    var maior2 = numeros[1];
+    var maior3 = maior1 + maior2 
+
+    alert("Os dois maiores valores são:" + maior3);
+   
+
+    </script>
+
+     <li> <a href="index.html"> Menu principal</a></li>

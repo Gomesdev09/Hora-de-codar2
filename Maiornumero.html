@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<script>
+var numeros = []; // cria uma variável sem valor
+for (var n = 0; n < 3; n++) { //*faz um loop na onde N é 0 e a cada loop aumenta 1 chegando ao maximo de < 3
+var numero = parseFloat(prompt(`digite o valor ${n + 1}:`)); //A váriavel N ganha 1 a cada loop completo
+numeros.push(numero) ;
+//.push faz com que todos os valores do loop que foram armazenados na váriavel "Numero" sejam imprimidos na variável "Numeros"
+}
+var maior =  Math.max(...numeros); // math.max serve para ver qual é o maior dos 3 numeros informados
+
+alert("o maior valor é: " + maior )
+</script>
+<li> <a href="index.html"> Menu principal</a></li>

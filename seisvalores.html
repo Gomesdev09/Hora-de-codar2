@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+
+var numeros = []; 
+
+for (var n = 0; n < 6; n++) { 
+var numero = parseFloat(prompt(`digite o valor ${n + 1}:`)); 
+numeros.push(numero) ;
+}
+var soma = 0;
+for (var i = 0; i < numeros.length; i++) {
+    soma += numeros[i];
+}
+
+var media = soma / numeros.length;
+
+alert(`A média aritmética dos valores informados é: ${media}`);
+
+</script>
+
+
+ <li> <a href="index.html"> Menu principal</a></li>

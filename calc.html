@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<script>
+    let nums = [];
+    let resultado = [];
+    for (let N = 1; N < 3; N++) {
+    let num = parseInt(prompt(`Digite seu ${N} numero:`));
+
+    nums.push(num);
+    }
+    let escolha = parseInt(prompt(" 1. Adição\n 2. Subtração\n 3. Divisão\n 4. Multiplicação\n"));
+    
+    if (escolha === 1) {
+   resultado = nums.reduce((a, b) => a + b);
+    } else if (escolha === 2) {
+        resultado = nums.reduce((a, b) => a - b);
+    } else if (escolha === 3) {
+        resultado = nums.reduce((a, b) => a / b);
+    } else if (escolha === 4) {
+        resultado = nums.reduce((a, b) => a * b);
+    }
+    alert(`O resultado da sua conta é igual a: ${resultado}`);
+</script>
+<li> <a href="index.html"> Menu principal</a></li>

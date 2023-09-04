@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script>
+    let sexo = prompt("Digite seu sexo (1 para feminino, 2 para masculino): ");
+    let altura = prompt("Digite seu altura");
+
+
+    altura = parseFloat(altura);
+    sexo = parseInt(sexo);
+
+    let peso = [];
+    if (sexo === 1) {
+        peso = (72.7 * altura)-58;
+
+        
+    } else if (sexo === 2){
+        peso = (62.1 * altura)-44.7;
+    } else{
+        alert(" Sexo Invalido ")
+    }
+    alert(`Seu peso ideal é: ${peso}`);
+</script>

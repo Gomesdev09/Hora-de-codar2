@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<script>
+    var notas = [];
+    for (let N = 1; N < 5; N++) {
+
+        var nota = parseFloat(prompt(`Digite sua ${N} nota`));
+   
+       while (nota > 10){ // wilhe cria uma barreira para valores que não passam de sua condição
+            
+          nota = parseFloat(prompt(`Digite sua ${N} nota novamente`));
+       }
+        
+        
+  notas.push(nota);
+    }
+    var soma = notas.reduce((a, b) => a + b);
+
+    media = soma / notas.length;
+
+    if (media => 5) {
+        alert(`Parabéns você passou no exame com media: ${media} `)
+        
+    } else {
+        alert(`Você não passou no exame ficou com media: ${media}`)
+    }
+</script>
